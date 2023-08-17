@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/marconi/home/userexternal/mmadeira/W7-X_scale_study/W7-X_B0_study.py", line 52, in <module>
+    s = SurfaceRZFourier.from_wout(surface_filename, range="half period", nphi=nphi, ntheta=ntheta)
+  File "/marconi/home/userexternal/mmadeira/.local/lib/python3.9/site-packages/simsopt-0.11.1.post177+g2bdc0c10.d20230314.dirty-py3.9-linux-x86_64.egg/simsopt/geo/surfacerzfourier.py", line 153, in from_wout
+    f = netcdf_file(filename, mmap=False)
+  File "/marconi/home/userexternal/mmadeira/.local/lib/python3.9/site-packages/scipy/io/_netcdf.py", line 246, in __init__
+    self.fp = open(self.filename, '%sb' % omode)
+FileNotFoundError: [Errno 2] No such file or directory: '/marconi/home/userexternal/mmadeira/W7-X_scale_study/wout_files/wout_W7-X_standard_configuration_rescaled_PHIEDGE=-0.0007286.nc'
+srun: error: r173c16s04: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=12069671.0
